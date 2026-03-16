@@ -31,55 +31,6 @@ ai-risk-intelligence-system/
     └── utils/
         └── explainer.py       # SHAP explainer
 ```
-
-## Installation
-
-1. Clone the repository or download the project files.
-
-2. Create a virtual environment (optional but recommended):
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-3. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-## Usage
-
-### Generate Sample Data
-
-The system automatically generates sample data if not present. You can also manually generate:
-
-```bash
-python generate_data.py
-```
-
-### Run the Dashboard
-
-```bash
-streamlit run app.py
-```
-
-The dashboard will open in your browser at `http://localhost:8501`.
-
-## Dashboard Tabs
-
-1. **Dashboard**: Overview of risk distribution and statistics
-2. **Predictions**: Make individual risk predictions with input features
-3. **Model Analysis**: Compare model performance metrics
-4. **Explainability**: View SHAP feature importance and explanations
-
-## Risk Scoring
-
-- **Low Risk**: 0-30
-- **Medium Risk**: 31-70  
-- **High Risk**: 71-100
-
-Risk thresholds can be adjusted in the sidebar.
-
 ## Technologies Used
 
 - **Python**: Programming language
